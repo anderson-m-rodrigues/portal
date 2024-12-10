@@ -216,6 +216,8 @@ hr {
   border: 0;
   border-bottom: solid 1px rgba(210, 215, 217, 0.75);
   margin: 2em 0; }
+  hr.minor {
+    margin: 0em 0; }
   hr.major {
     margin: 3em 0; }
 
@@ -1004,7 +1006,7 @@ header.major > :last-child {
   padding: 0 0.75em 0.5em 0; }
 
 header.main > :last-child {
-  margin: 0 0 1em 0; }
+  margin: 0 0 0.5em 0; }
 
 /* Form */
 form {
