@@ -2273,3 +2273,9 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.inscricao {
+  text-decoration-color: red;
+  font-weight: 700;
+  text-decoration: underline;
+}
