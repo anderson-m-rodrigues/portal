@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha */
+  gap: 10px; /* Espaço entre os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.box {
+  flex: 1 1 calc(33.333% - 10px); /* Ocupa 1/3 da largura disponível com ajuste para o gap */
+  min-width: 150px; /* Define uma largura mínima */
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+}
+
+@media (max-width: 768px) {
+  .box {
+    flex: 1 1 calc(50% - 10px); /* Ocupa metade da largura em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    flex: 1 1 100%; /* Ocupa 100% da largura em telas pequenas */
+  }
+}
