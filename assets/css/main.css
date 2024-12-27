@@ -1005,6 +1005,12 @@ header.major > :last-child {
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
 
+header.minor > :last-child {
+    border-bottom: solid 3px #f56a6a;
+    display: inline-block;
+    margin: 0 0 1em 0;
+    padding: 0 0.5em 0.5em 0; }
+
 header.main > :last-child {
   margin: 0 0 0.5em 0; }
 
@@ -1440,6 +1446,7 @@ ul.pagination {
       padding-right: 0; } }
 
 /* Table */
+/*
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto; }
@@ -1479,7 +1486,7 @@ table {
       border-bottom: 0; }
     table.alt tfoot {
       border-top: 0; }
-
+*/
 /* Button */
 input[type="submit"],
 input[type="reset"],
