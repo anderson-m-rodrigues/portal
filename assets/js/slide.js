@@ -7,7 +7,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) { slideIndex = 1; }
   slides[slideIndex - 1].style.display = 'block';
-  setTimeout(showSlides, 712000); // Troca a cada 7 segundos
+  setTimeout(showSlides, 7000); // Troca a cada 7 segundos
 }
 
 function changeSlide(n) {
