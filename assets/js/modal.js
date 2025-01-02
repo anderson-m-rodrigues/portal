@@ -1,12 +1,11 @@
-const thumbnail = document.getElementById("thumbnail");
-const modal = document.getElementById("imageModal");
-
-// Mostrar o modal ao clicar na imagem reduzida
-thumbnail.addEventListener("click", () => {
+function showModal(image) {
+  const modal = document.getElementById("modal");
+  const modalImage = document.getElementById("modalImage");
+  modalImage.src = image.src; // Define a imagem no modal
   modal.style.display = "flex";
-});
+}
 
-// Fechar o modal ao clicar fora da imagem ampliada
-modal.addEventListener("click", () => {
+function closeModal() {
+  const modal = document.getElementById("modal");
   modal.style.display = "none";
-});
+}

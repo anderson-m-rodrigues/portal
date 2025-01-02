@@ -6,10 +6,18 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/modal.css" />
 	<link rel="icon" href="../images/favicon.ico" />
 </head>
 
 <body class="is-preload">
+
+  <!-- Modal -->
+  <div id="modal" onclick="closeModal()">
+	  <a href="#" class="close">&times;</a>
+	  <img src="2025-jan.jpg" id="modalImage">
+  </div>
+	<script src="../assets/js/modal.js"></script>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
@@ -28,8 +36,8 @@
 								target="_blank"><span class="label">Facebook</span></a></li>
 						<li><a href="https://tiktok.com/@portalcaminhosdearuanda" class="icon brands fa-tiktok"
 								target="_blank"><span class="label">TikTok</span></a></li>
-						<li><a href="https://www.youtube.com/@alexze100" class="icon brands fa-youtube" target="_blank"><span
-									class="label">Youtube</span></a></li>
+						<li><a href="https://www.youtube.com/@alexze100" class="icon brands fa-youtube" 
+							  target="_blank"><span class="label">Youtube</span></a></li>
 					</ul>
 				</header>
 
@@ -39,7 +47,7 @@
 						<h1>Cronograma de Atividades do Templo</h1>
 					</header>
 
-					<span class="image left"><img src="2025-jan.jpg" /></span>								
+					<span class="image fit" style="max-width: 50%;"><img src="2025-jan.jpg" onclick="showModal(this)"/></span>								
 
 				</section>
 
